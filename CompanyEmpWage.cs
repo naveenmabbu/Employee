@@ -4,12 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace hellonaveen.UC_10
+namespace hellonaveen.UC_last_class
 {
-    class CompanyEmpWage
+    public class CompanyEmpWage
     {
-
-
         public string company;
         public int empRatePerHour;
         public int numOfWorkingDays;
@@ -22,6 +20,7 @@ namespace hellonaveen.UC_10
             this.empRatePerHour = empRatePerHour;
             this.numOfWorkingDays = numOfWorkingDays;
             this.maxHoursPerMonth = maxHoursPerMonth;
+            this.totalEmpWage = 0;
         }
 
         public void setTotalEmpWage(int totalEmpWage)
@@ -31,7 +30,7 @@ namespace hellonaveen.UC_10
 
         public string toString()
         {
-            return "Total Emp Wage for company : " + this.company + " is : " + this.totalEmpWage;
+            return "Total Emp Wage for Company: " + this.company + " is: " + this.totalEmpWage;
         }
     }
 }
